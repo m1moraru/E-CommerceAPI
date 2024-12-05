@@ -1,0 +1,117 @@
+/* Account.css */
+
+/* Main container for account details */
+.account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 85%;
+    height: 50vh;
+    border-bottom: solid 0.1px grey;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .account-container h1 {
+    font-size: 23px;
+  }
+
+  .account-container p {
+    padding: 10px;
+  }
+  .account-container button {
+    height: 30px;
+    width: 90px;
+    background: #000;
+    color: whitesmoke;
+    font-size: 14px;
+    border: solid 0.1px #000;
+    border-radius: 30px;
+  }
+
+  .account-container button:hover {
+    background: whitesmoke;
+    color: #000;
+    border: solid 0.1px #000;
+  }
+  
+  /* Header section */
+  .profile-header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile details section */
+  .profile-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  /* Profile picture styling */
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  /* User information styling */
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .user-info strong {
+    font-weight: bold;
+  }
+  
+  /* Buttons for updating profile and logging out */
+  .account-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .update-profile-btn, .logout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .update-profile-btn {
+    background-color: #000;
+    color: white;
+    border: solid 0.1px #000;
+    height: 40px;
+    margin-top: 60px;
+  }
+  .update-profile-btn:hover {
+    background: whitesmoke;
+    color: #000;
+    border: solid 0.1px #000;
+  }
+  
+  .logout-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+  }
+  

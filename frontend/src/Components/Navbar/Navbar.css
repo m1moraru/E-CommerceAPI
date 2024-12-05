@@ -1,0 +1,228 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img {
+    height: 70px;
+    width: auto;
+    padding-left: -20px;
+}
+
+.nav-logo p {
+    color : black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    display: inline-block;
+}
+.nav-link:hover {
+    color: black;
+    font-weight: bold; 
+}
+.nav-menu hr {
+    border: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: black;
+    text-align: center;
+}
+.nav-login-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 0px 10px;
+    margin-right: -40px;
+}
+.nav-login-cart .nav-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-right: -25px;
+    width: 190px;
+}
+.nav-login-cart .nav-login p {
+    font-size: 14px;
+}
+.nav-login-cart .nav-login .logout-btn {
+    border: none;
+    font-size: 14px;
+    border-radius: none;
+    background: transparent;
+}
+.nav-login-cart .nav-login .logout-btn:hover {
+    border: none;
+    background: none;
+    color: black;
+}
+.nav-login-cart .cart-icon {
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+.nav-login-cart button {
+    width: 85px;
+    height: 28px;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.nav-login-cart button:hover {
+    background: transparent;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+}
+.nav-cart-count {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+    margin-left: -53px;
+    border-radius: 11px;
+    font-size: 11px;
+    background: red;
+    color: white;
+}
+.nav-login-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-login-cart .nav-login {
+    padding-bottom: 0px;
+}
+
+/* Container for welcome message and hover links */
+.nav-login-cart .welcome-container {
+    position: relative;
+    display: inline-block; 
+}
+.nav-login .welcome-container .hover-links hr {
+    height: 45px;
+    width: 100%;
+    margin-top: -48px;
+    margin-bottom: 20px;
+    border: none;
+    padding-bottom: -15px ;
+}
+  
+/* Hide the hover links initially */
+.welcome-container .hover-links {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none; 
+    height: 200px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: -10%;
+    padding: 10px;
+    margin-top: 36px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+  
+/* Style for the welcome message */
+.nav-login .welcome-container .welcome-message {
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+/* Show the hover links when hovering over the welcome container */
+.welcome-container:hover .hover-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: none;
+}
+  
+/* Style for order history link */
+.welcome-container .hover-links .order-history-link {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    border-bottom: solid 0.1px rgb(212, 212, 212);
+    height: 30px;
+    text-align: center;
+    align-content: center;
+}
+  
+/* Style for order history link */
+.welcome-container .hover-links .order-history-link:hover {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+  
+/* Style for the logout button */
+.welcome-container .hover-links .logout-btn {
+    display: block;
+    background-color: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 0.1px rgb(212, 212, 212);
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+.welcome-container .hover-links .logout-btn:hover {
+    color: black;
+    font-weight: bold;
+    border-bottom: solid 0.1px rgb(212, 212, 212);
+}
